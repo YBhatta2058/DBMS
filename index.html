@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="https://thumbs.dreamstime.com/b/hospital-logo-template-hospital-logo-template-117487677.jpg" alt="Logo"></a>
+        </div>
+        <ul id = "navlist">
+            <li class="item"><a href="index.html">Home </a></li>
+            <li class="item"><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+        <section id="home">
+            <h1 class="primary-heading center">Welcome to Hospital health data center</h1>
+            <p>Enter your data and get yourself diagonised</p>
+            <p>Your data is our priority</p>
+        </section>
+
+        <section class="loginSection">
+            <div class="patient">
+        
+                <div class="container">
+                    <h1>Patient Login</h1>
+                    If you are a new user <a href="patientDoctor.html" style="text-decoration: none;">Click to SignUp</a>
+                    <form action="patientLogin.php" method = "post">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="userName">Username</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="email" id="uname" name="email" placeholder="Your email..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">Password</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="password" id="password" name="password" placeholder="Your password..">
+                            </div>
+                        </div>
+                        <div class="row" id = "loginBtn">
+                            <input type="submit" value="Login">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="doctor">
+                <div class="container">
+                    <h1>Doctor Login</h1>
+                    <form action="doctorlogin.php" method = "post">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="userName">Username</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="uname" name="uname" placeholder="Your email..">
+                            </div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="pword">Password</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="password" id="password" name="pword" placeholder="Your password..">
+                            </div>
+                        </div>
+                        <div class="row" id = "loginBtn2">
+                            <input type="submit" value="Login">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        
+</body>
+<script src = "script.js"></script>
+</html>
